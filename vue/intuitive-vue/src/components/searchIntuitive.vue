@@ -38,7 +38,7 @@ export default {
       this.buscaRealizada = true;
 
       try {
-        const resposta = await axios.get(`http://127.0.0.1:5000/search?query=${this.query}`);
+        const resposta = await axios.get(`https://processo-seletivo-imbt.onrender.com/search?query=${this.query}`);
         this.operadoras = resposta.data;
       } catch (erro) {
         console.error("Erro ao buscar operadoras:", erro);
